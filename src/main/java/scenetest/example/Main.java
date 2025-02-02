@@ -1,4 +1,6 @@
 package scenetest.example;
+import java.io.PushbackReader;
+import java.io.StringReader;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -12,5 +14,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         List<String> reservedWords = Arrays.asList("var", "output", "initialize", "if", "then", "endif", "compute");
+        PushbackReader reader = new PushbackReader(new StringReader(""));
         }
     }
